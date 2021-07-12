@@ -100,7 +100,7 @@ function validatorForm(element){
                 $("#phone").addClass('error-input');
                 var span=$(".phone-email").find('span');
                 span.addClass("error");
-                span.html("Please enter a valid email?");
+                span.html("Please enter a valid email.");
                 var label=$(".phone-email>label");
                 label.addClass("label-error");
             }
@@ -108,10 +108,14 @@ function validatorForm(element){
         else {
             var span=$(".phone-email").find('span');
             span.addClass("error");
+            
             var alphabet=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
             for(let i=0;i<email.length;i++){
                 if (alphabet.indexOf(email[i])!==-1){
-                    span.html("Please enter a valid phone?");
+                    $("#phone").addClass('error-input');
+                    span.html("Please enter a valid phone.");
+                    var label=$(".phone-email>label");
+                    label.addClass("label-error");
                 }else{
                     span.html("");
                 }
