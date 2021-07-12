@@ -170,7 +170,11 @@ footer>p{
     transform: translate(30%,-260%);
     color:#1DA1F1;
 }
-
+input[type="email"]:valid+label{
+    font-size: 0.8em;
+    transform: translate(30%,-260%);
+    color:#1DA1F1;
+}
 .name>.counter{
     display: none;
 } 
@@ -287,13 +291,22 @@ select{
     pointer-events: initial !important;
 }
 .error-input{
-    border: 2px solid #E0245E;
+    border: 2px solid #E0245E !important;
+}
+.error{
+    display: block;
+    font-size: 0.8em;
+    margin-top: -25px;
+    color: #E0245E !important;
+}
+.label-error{
+    color: #E0245E !important;
+    font-size: 1em;
+}
+label+span{
+    display: none;
 }
 
-.error{
-    /* display: none; */
-    color: #E0245E;
-}
 
 
 

@@ -54,13 +54,13 @@
             <div class="name">
                 <input type="text" id="name" required maxlength="50" onkeyup="formValidator()">
                 <label for="name">Name</label>
-                <label class="counter"><span id="count">0</span>/50</label>
-                <span class="error"></span>
+                <label class="counter"><label id="count">0</label>/50</label>
+                <span></span>
             </div>
             <div class="phone-email">
                 <input type="tel" id="phone"  required onkeyup="formValidator()">
                 <label for="name" id="ph">Phone</label>
-                <span class="error"></span>
+                <span></span>
             </div>
             <p id="change">Use email instead</p>
             <div class="date">
@@ -70,7 +70,6 @@
                     <div class="months">
                         <select name="month" id="month" required onchange="formValidator()">
                             <option value="" selected></option>
-
                         </select>
                         <label for="month">Month</label>
                     </div>
